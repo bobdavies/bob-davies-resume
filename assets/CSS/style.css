@@ -1239,32 +1239,109 @@ body {
 
 /* QR Code Styles */
 .qr-section {
-    margin: 2rem auto 0;
-    text-align: center;
+    margin-top: 2.5rem;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qr-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.qr-content {
+    display: flex;
+    align-items: center;
     padding: 1.5rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    gap: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.qr-text {
+    flex: 1;
+    text-align: left;
 }
 
 .qr-heading {
-    margin-bottom: 1rem;
-    color: #333;
-    font-size: 1.1rem;
-    font-weight: 500;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.qr-heading i {
+    color: #0066cc;
+}
+
+.qr-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.qr-container {
+    position: relative;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.qr-container:hover {
+    transform: scale(1.02);
 }
 
 #qrcode {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0.5rem;
-    background-color: white;
-    border-radius: 4px;
+    display: block;
+    width: 150px;
+    height: 150px;
 }
 
 #qrcode img {
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.qr-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.qr-container:hover .qr-overlay {
+    opacity: 0.1;
+}
+
+.qr-overlay i {
+    font-size: 3rem;
+    color: #0066cc;
+}
+
+@media (max-width: 768px) {
+    .qr-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .qr-text {
+        text-align: center;
+    }
+
+    .qr-heading {
+        justify-content: center;
+    }
 }

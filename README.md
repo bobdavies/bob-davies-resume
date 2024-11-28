@@ -51,15 +51,18 @@ bob_davies/
 ## 💡 Key Features Explained
 
 ### PDF Generation
+
 - Click the "Download Resume" button to generate a PDF version
 - Maintains formatting and styling from the web version
 - Automatically captures all content sections
 
 ### QR Code
+
 - Generates QR code for easy sharing of the resume
 - Updates dynamically with the current URL
 
 ### Responsive Design
+
 - Adapts to different screen sizes
 - Mobile-first approach
 - Smooth transitions between layouts
