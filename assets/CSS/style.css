@@ -1239,12 +1239,13 @@ body {
 
 /* QR Code Styles */
 .qr-section {
-    margin-top: 2rem;
+    margin: 2rem auto 0;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
 }
 
 .qr-heading {
@@ -1258,7 +1259,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: white;
     border-radius: 4px;
 }
