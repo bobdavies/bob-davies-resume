@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob Davies - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <button id="download-resume" class="download-btn">
+        <i class="fas fa-download"></i>
+        <span class="btn-text">
+            <span>Download</span>
+            <span>Resume</span>
+        </span>
+    </button>
+    <!-- Owner Controls -->
+    <div id="owner-controls">
+        <button id="loginBtn" style="font-family: Arial, Helvetica, sans-serif;">Owner Login</button>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h2>Owner Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <div class="button-group">
+                <button id="loginSubmitBtn">Login</button>
+                <button id="closeModalBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="resume">
+        <header class="name_section" data-aos="fade-right">
+            <h1>
+
+                <span>h</span>
+                <span>i</span>
+                <span>!</span>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <span>i</span>
+                <span>t'</span>
+                <span>s</span>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <span>B</span>
+                <span>O</span>
+                <span>B</span>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <span>D</span>
+                <span>A</span>
+                <span>V</span>
+                <span>I</span>
+                <span>E</span>
+                <span>S</span>
+            </h1>
+        </header>
+        <main class="content_section">
+            <section class="content_header" data-aos="fade-up">
+                <div class="profile-container">
+                    <img src="profile.jpg" alt="Bob Davies" class="profile_image hover-effect" id="profileImage">
+                    <div id="profileUpload" class="profile-upload" style="display: none;">
+                        <input type="file" id="imageUpload" accept="image/*" style="display: none">
+                        <button onclick="document.getElementById('imageUpload').click()" class="upload-btn">
+                            <i class="fas fa-camera"></i> Update Photo
+                        </button>
+                    </div>
+                </div>
+                <div class="name">
+                    <h2 class="animate-text">Bob Davies</h2>
+                    <p class="tagline"><i class="fas fa-code"></i> Tech Enthusiast, <i class="fas fa-lightbulb"></i> Innovative and Creative.</p>
+                </div>
+            </section>
+            <section class="contact_bar" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact_item" data-tooltip="Email">
+                    <a href="mailto:daviesbob123@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        <span>daviesbob123@gmail.com</span>
+                    </a>
+                </div>
+                <div class="contact_item" data-tooltip="Phone">
+                    <a href="tel:+23276789012">
+                        <i class="fas fa-phone"></i>
+                        <span>+232 80181131</span>
+                    </a>
+                </div>
+                <div class="contact_item" data-tooltip="Location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Freetown, Sierra Leone</span>
+                </div>
+                <div class="contact_item" data-tooltip="LinkedIn">
+                    <a href="https://linkedin.com/in/bob-davies" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>https://www.linkedin.com/in/bob-davies-490849268/</span>
+                    </a>
+                </div>
+                <div class="contact_item" data-tooltip="GitHub">
+                    <a href="https://github.com/bob-davies" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>https://github.com/bobdavies</span>
+                    </a>
+                </div>
+            </section>
+            <main class="main_content">
+                <!-- Profile Section -->
+                <section class="full_width_section" id="profile" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="section_header"><i class="fas fa-user-circle"></i> Profile</h3>
+                    <p class="hover-text">
+                        Results-driven Software Engineering student with a passion for creating innovative digital solutions. 
+                        Specializing in full-stack web development and UI/UX design, I combine technical expertise with creative 
+                        problem-solving abilities. Demonstrated success in collaborative environments through bootcamps and hackathons, 
+                        consistently delivering high-quality solutions. Committed to continuous learning and staying current with emerging 
+                        technologies while maintaining a strong focus on user-centered design principles.
+                    </p>
+                </section>
+
+                <!-- Education Section -->
+                <section class="full_width_section" id="education" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="section_header"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="education_list">
+                        <div class="education_item">
+                            <h4><i class="fas fa-university"></i> BSc. Software Engineering with Multimedia</h4>
+                            <p class="institution"><i class="fas fa-building"></i> Limkokwing University of Creative Technology</p>
+                            <p class="campus"><i class="fas fa-map-marker-alt"></i> Sierra Leone Campus</p>
+                            <p class="duration"><i class="far fa-calendar-alt"></i> October 2022 - February 2026</p>
+                            <ul class="education_details">
+                                <li><i class="fas fa-check-circle"></i> Specializing in software development and multimedia design</li>
+                                <li><i class="fas fa-check-circle"></i> Focus on creative technology solutions</li>
+                            </ul>
+                        </div>
+                        <div class="education_divider"></div>
+                        <div class="education_item">
+                            <h4><i class="fas fa-school"></i> Secondary Education</h4>
+                            <p class="institution"><i class="fas fa-building"></i> Prince of Wales School</p>
+                            <p class="campus"><i class="fas fa-map-marker-alt"></i> Kingtom</p>
+                            <p class="duration"><i class="far fa-calendar-alt"></i> 2014 - 2020</p>
+                            <ul class="education_details">
+                                <li><i class="fas fa-check-circle"></i> Completed both Junior and Senior Secondary education</li>
+                                <li><i class="fas fa-check-circle"></i> Strong foundation in science and mathematics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Section -->
+                <section class="full_width_section" id="experience" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="section_header"><i class="fas fa-briefcase"></i> Experience</h3>
+                    <div class="experience_list">
+                        <div class="experience_item">
+                            <div class="experience_icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="experience_content">
+                                <h4>STEM Tutor</h4>
+                                <p class="company"><i class="fas fa-building"></i> VPS</p>
+                                <p class="duration"><i class="far fa-calendar-alt"></i> 2023 - Present</p>
+                                <ul class="experience_details">
+                                    <li><i class="fas fa-check-circle"></i> Conducted STEM workshops</li>
+                                    <li><i class="fas fa-check-circle"></i> Mentored junior developers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="experience_item">
+                            <div class="experience_icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="experience_content">
+                                <h4>UI/UX Designer</h4>
+                                <p class="company"><i class="fas fa-building"></i> DjangoGirls</p>
+                                <p class="duration"><i class="far fa-calendar-alt"></i> 2023</p>
+                                <ul class="experience_details">
+                                    <li><i class="fas fa-check-circle"></i> Designed user interfaces</li>
+                                    <li><i class="fas fa-check-circle"></i> Improved user experience</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="experience_item">
+                            <div class="experience_icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="experience_content">
+                                <h4>Web Development Bootcamp</h4>
+                                <p class="company"><i class="fas fa-building"></i> Christex Foundation</p>
+                                <p class="duration"><i class="far fa-calendar-alt"></i> 2023</p>
+                                <ul class="experience_details">
+                                    <li><i class="fas fa-check-circle"></i> Learned modern web development technologies</li>
+                                    <li><i class="fas fa-check-circle"></i> Built responsive and interactive websites</li>
+                                    <li><i class="fas fa-check-circle"></i> Collaborated with fellow developers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="experience_item">
+                            <div class="experience_icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="experience_content">
+                                <h4>Innovation Hackathon Participant</h4>
+                                <p class="company"><i class="fas fa-building"></i> Christex Foundation</p>
+                                <p class="duration"><i class="far fa-calendar-alt"></i> 2023</p>
+                                <ul class="experience_details">
+                                    <li><i class="fas fa-check-circle"></i> Developed innovative solutions under time constraints</li>
+                                    <li><i class="fas fa-check-circle"></i> Worked in an agile team environment</li>
+                                    <li><i class="fas fa-check-circle"></i> Presented project to judges and stakeholders</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills and Languages Grid -->
+                <div class="grid">
+                    <section class="grid_item" id="skills" data-aos="fade-up" data-aos-delay="600">
+                        <h3 class="grid_header"><i class="fas fa-tools"></i> Skills</h3>
+                        <div class="skills_container">
+                            <div class="skills_group">
+                                <h4><i class="fas fa-users"></i> Soft Skills</h4>
+                                <ul class="skills_list soft_skills">
+                                    <li>
+                                        <i class="fas fa-comments"></i>
+                                        <span>Communication</span>
+                                        <div class="skill_bar" style="--level: 90%"></div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-handshake"></i>
+                                        <span>Team Work</span>
+                                        <div class="skill_bar" style="--level: 95%"></div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-tasks"></i>
+                                        <span>Project Management</span>
+                                        <div class="skill_bar" style="--level: 85%"></div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span>Problem Solving</span>
+                                        <div class="skill_bar" style="--level: 88%"></div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-clock"></i>
+                                        <span>Time Management</span>
+                                        <div class="skill_bar" style="--level: 92%"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skills_group">
+                                <h4><i class="fas fa-laptop-code"></i> Technical Skills</h4>
+                                <ul class="skills_list tech_skills">
+                                    <li>
+                                        <i class="fab fa-python"></i>
+                                        <span>Python</span>
+                                        <div class="skill_bar" style="--level: 85%"></div>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-html5"></i>
+                                        <span>HTML5/CSS3</span>
+                                        <div class="skill_bar" style="--level: 90%"></div>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-js"></i>
+                                        <span>JavaScript</span>
+                                        <div class="skill_bar" style="--level: 80%"></div>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-figma"></i>
+                                        <span>Figma</span>
+                                        <div class="skill_bar" style="--level: 75%"></div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-code"></i>
+                                        <span>Web Development</span>
+                                        <div class="skill_bar" style="--level: 88%"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="grid_item" id="languages" data-aos="fade-up" data-aos-delay="700">
+                        <h3 class="grid_header"><i class="fas fa-language"></i> Languages</h3>
+                        <div class="language_item">
+                            <span><i class="fas fa-check"></i> English</span>
+                            <div class="language_level" style="--level: 95%"></div>
+                            <span class="level_label">Professional</span>
+                        </div>
+                        <div class="language_item">
+                            <span><i class="fas fa-check"></i> Krio</span>
+                            <div class="language_level" style="--level: 100%"></div>
+                            <span class="level_label">Native</span>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </main>
+    </div>
+
+    <script src="JS/config.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="JS/qr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="JS/pdf.js"></script>
+
+</body>
+</html>
