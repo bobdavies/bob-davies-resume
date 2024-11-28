@@ -1436,3 +1436,238 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/* Mobile Header Styles */
+.mobile-header {
+    display: none;
+    padding: 1rem;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mobile-name {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin: 0 0 1rem 0;
+    letter-spacing: 2px;
+}
+
+.mobile-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.mobile-buttons .owner-btn,
+.mobile-buttons .download-btn {
+    flex: 1;
+    max-width: 150px;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin: 0 0.5rem;
+}
+
+.mobile-buttons .owner-btn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-buttons .owner-btn:hover {
+    background: #34495e;
+}
+
+/* Top Buttons Section */
+.top-buttons {
+    display: none;
+    padding: 1rem;
+    background: #fff;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.top-buttons .owner-btn,
+.top-buttons .download-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+.top-buttons .owner-btn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+}
+
+.top-buttons .owner-btn:hover {
+    background: #34495e;
+}
+
+.top-buttons .download-btn {
+    background: #0066cc;
+    color: white;
+    border: none;
+}
+
+.top-buttons .download-btn:hover {
+    background: #0052a3;
+}
+
+/* Enhanced Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .desktop-only,
+    .name_section {
+        display: none !important;
+    }
+
+    .top-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .resume {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .content_section {
+        margin-left: 0;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .main_content {
+        padding: 0.5rem;
+    }
+
+    /* Stack all sections vertically */
+    .content_header,
+    .full_width_section,
+    .grid {
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .content_header {
+        text-align: center;
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile_image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 1rem;
+    }
+
+    .contact_details {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .contact_item {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .experience_item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .experience_icon {
+        margin: 0 auto 1rem;
+    }
+
+    .experience_content {
+        padding-left: 0;
+    }
+
+    .skills_container,
+    .skills_group {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .language-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .qr-section {
+        margin: 1.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-buttons {
+        flex-direction: column;
+        padding: 0.8rem;
+    }
+
+    .top-buttons .owner-btn,
+    .top-buttons .download-btn {
+        width: 100%;
+        margin: 0.3rem 0;
+    }
+
+    .content_section {
+        padding: 0.8rem;
+    }
+
+    .section_header {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .profile_image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contact_details {
+        gap: 0.8rem;
+    }
+
+    .experience_item {
+        padding: 0.8rem 0;
+    }
+
+    .qr-section {
+        margin: 1rem 0;
+    }
+
+    #qrcode {
+        width: 120px;
+        height: 120px;
+    }
+}
