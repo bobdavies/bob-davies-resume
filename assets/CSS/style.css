@@ -1236,3 +1236,59 @@ body {
         font-size: 1.2rem;
     }
 }
+
+/* QR Code Styles */
+.qr-section {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qr-section h3 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#qrcode img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-info i {
+    color: #0066cc;
+    width: 20px;
+}
