@@ -87,6 +87,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👤 Contact
 
 Bob Davies
-- Email: [your-email@example.com]
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
+- Email: [daviesbob83@gmail.com]
+- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/bob-davies)
+- GitHub: [[Your GitHub Profile](https://github.com/bobdavies)]

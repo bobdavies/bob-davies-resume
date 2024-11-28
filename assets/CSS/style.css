@@ -1247,6 +1247,13 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.qr-heading {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
 #qrcode {
     display: flex;
     justify-content: center;
